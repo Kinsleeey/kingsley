@@ -17,7 +17,11 @@ body {
 }
 
 a {
+    color: white;
     text-decoration: none;
+}
+li {
+    list-style: none;
 }
 /*Header*/
 .nav {
@@ -41,9 +45,55 @@ a {
     width: 20px;
 }
 
-.navb svg {
+.inactive {
+    filter: blur(5px);
+    opacity: 30%;
+    pointer-events: none;
+}
+.hide {
+    display: none;
+}
+.sidebar {
+    color: white;
+    height: 100dvh;
+    width: 100dvw;
+    padding: 2rem;
+    position: fixed;
+    z-index: 1000;
+}
+.sidebar a {
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+.x {
+    width: 30px;
+    height: 30px;
+}
+.x svg {
     width: 100%;
     height: 100%;
+}
+.sidebar-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.sidebar-icon svg {
+    width: 25px;
+    height: 25px;
+    color: var(--darker-purple);
+}
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.nav-center ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
 }
 
 /*Hero*/
