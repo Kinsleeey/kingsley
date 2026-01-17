@@ -406,10 +406,530 @@ footer hr {
 }
 
 @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/*responsive part */
+
+@media (min-width: 768px) {
+    .sidebar a {
+        font-size: 32px;
+    }
+    .sidebar-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 0 3rem;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        height: 42px;
+        width: 260px;
+        font-size: 16px;
+    }
+
+    /* About */
+    .about {
+        padding: 5rem 3rem;
+    }
+
+    .about-me-header p:first-of-type {
+        font-size: 28px;
+    }
+
+    .about-me-header p:last-of-type {
+        font-size: 14px;
+    }
+
+    .QAs {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .QA {
+        flex: 1;
+        padding: 1.5rem;
+    }
+
+    .Q {
+        font-size: 16px;
+    }
+
+    .A {
+        font-size: 14px;
+    }
+
+    /* Stack */
+    .stacks {
+        margin: 2rem 3rem;
+        padding: 2rem;
+    }
+
+    .stacks-title {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .stack-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 3rem;
+    }
+
+    .stack {
+        padding: 0.75rem;
+    }
+
+    .stack p {
+        font-size: 14px;
+    }
+
+    .stack-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Project */
+    .project {
+        padding: 4rem 3rem;
+    }
+
+    .project-section-title p:first-of-type {
+        font-size: 28px;
+    }
+
+    .project-section-title .clap {
+        font-size: 14px;
+    }
+
+    .project-card {
+        margin: 2rem 0;
+        padding: 1.5rem;
+    }
+
+    .project-card span p:first-of-type {
+        font-size: 22px;
+    }
+
+    .project-card span p:last-of-type {
+        font-size: 14px;
+    }
+
+    .project-cover {
+        aspect-ratio: 2.5/1;
+        max-height: 300px;
+    }
+
+   
+
+    .project-card button {
+        padding: 8px 28px;
+        font-size: 14px;
+    }
+
+    .project-stack-img {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Reach*/
+    .reach-out {
+        padding: 5rem 3rem;
+    }
+
+    .reach-section p:first-of-type {
+        font-size: 28px;
+    }
+
+    .reach-section .clap {
+        font-size: 14px;
+    }
+
+    .step-card {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 2.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .step-card span {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .plugin {
+        flex-shrink: 0;
+    }
+
+    .w {
+        font-size: 26px;
+    }
+
+    .des {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 5rem 3rem;
+    }
+
+    footer h2 {
+        font-size: 48px;
+    }
+
+    .contact-me {
+        height: 52px;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .footer-contact {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-contact a {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    /* Hero */
+    .hero {
+        padding: 0 5rem;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .hero button {
+        height: 48px;
+        width: 280px;
+        font-size: 18px;
+    }
+
+    /* About */
+    .about {
+        padding: 6rem 2rem;
+        max-width: 1400px;
+        margin: 3rem auto;
+    }
+
+    .about-me-header p:first-of-type {
+        font-size: 36px;
+    }
+
+    .about-me-header p:last-of-type {
+        font-size: 16px;
+    }
+
+    .QAs {
+        gap: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .QA {
+        padding: 2rem;
+    }
+
+    .Q {
+        font-size: 18px;
+    }
+
+    .A {
+        font-size: 15px;
+    }
+
+    /* Stack */
+    .stacks {
+        margin: 3rem auto;
+        padding: 1rem;
+        max-width: 1400px;
+    }
+
+    .stacks-title {
+        font-size: 32px;
+        margin-bottom: 2rem;
+    }
+
+    .stack-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+        padding: 3rem 2rem;
+    }
+
+    .stack {
+        padding: 1rem;
+    }
+
+    .stack p {
+        font-size: 15px;
+    }
+
+    .stack-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Project */
+    .project {
+        padding: 6rem 5rem;
+    }
+
+    .project-section-title {
+        margin-bottom: 3rem;
+    }
+
+    .project-section-title p:first-of-type {
+        font-size: 36px;
+    }
+
+    .project-section-title .clap {
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .project-card {
+        max-width: 1400px;
+        margin: 2.5rem auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        gap: 2rem;
+        align-items: stretch;
+    }
+
+    .project-card > a,
+    .project-card > .project-cover {
+        grid-row: 1 / 3;
+    }
+    
+    .project-card span p:first-of-type {
+        font-size: 30px;
+    }
+
+    .project-card span p:last-of-type {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    .project-card span {
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .project-card span p:first-of-type {
+        font-size: 28px;
+    }
+
+    .project-card span p:last-of-type {
+        font-size: 16px;
+        color: var(--hero-sub);
+    }
+
+    .project-cover {
+        height: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .project-cover {
+        aspect-ratio: 2.5/1.5;
+        max-height: 400px;
+    }
+
+    .project-cover img {
+        object-fit: fill;
+    }
+
+    .project-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        align-self: end;
+        padding-bottom: 2rem;
+    }
+    .project-card button {
+        padding: 10px 180px;
+        font-size: 16px;
+    }
+
+    .project-stack-img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Reach Out*/
+    .reach-out {
+        padding: 6rem 5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .reach-section p:first-of-type {
+        font-size: 36px;
+    }
+
+    .reach-section .clap {
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .step-card {
+        gap: 3rem;
+        padding: 3rem;
+        margin: 2rem 0;
+    }
+
+    .plugin {
+        width: 120px;
+        height: 120px;
+    }
+
+    .w {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    .des {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+        padding: 6rem 5rem;
+        min-height: 100vh;
+    }
+
+    footer h2 {
+        font-size: 64px;
+        line-height: 1.2;
+    }
+
+    .footer-span-1 {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .contact-me {
+        height: 56px;
+        width: 220px;
+        font-size: 18px;
+    }
+
+    .footer-contact a {
+        font-size: 20px;
+    }
+
+    .copywrite {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    .about,
+    .stacks,
+    .reach-out {
+        max-width: 1600px;
+    }
+
+    .project-card {
+        max-width: 1600px;
+    }
+
+    .stack-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* mini animation */
+@media (min-width: 768px) {
+    .hero button:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .QA:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(230, 90, 226, 0.3);
+    }
+
+    .stack:hover {
+        box-shadow: 0 0 25px var(--darker-purple);
+        transform: scale(1.08);
+    }
+
+    .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 40px rgba(230, 90, 226, 0.2);
+    }
+
+    .project-cover:hover {
+        transform: scale(1.03);
+    }
+
+    .project-card button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .step-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(230, 90, 226, 0.25);
+    }
+
+    .contact-me:hover {
+        transform: scale(1.08);
+        background-color: var(--purple);
+        cursor: pointer;
+    }
+
+    footer a:hover {
+        color: var(--purple);
+    }
+
+    
+    .hero button,
+    .QA,
+    .stack,
+    .project-card,
+    .project-cover,
+    .project-card button,
+    .step-card,
+    .contact-me,
+    footer a {
+        transition: all 0.3s ease;
+    }
+}
