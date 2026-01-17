@@ -5,9 +5,7 @@
     --header: #070911;
     --hero-sub: #cdcdcfd4;
 }
-:root {
 
-}
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +16,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
+a {
+    text-decoration: none;
+}
 /*Header*/
 .nav {
     padding: 1rem;
@@ -41,6 +41,10 @@ body {
     width: 20px;
 }
 
+.navb svg {
+    width: 100%;
+    height: 100%;
+}
 
 /*Hero*/
 .hero {
@@ -185,6 +189,10 @@ body {
 .project-section-title {
     text-align: center;
 }
+.clap {
+    font-size: 12px;
+    color: var(--hero-sub);
+}
 .project-cover {
     width: 100%;
     aspect-ratio: 3/1.5;
@@ -263,10 +271,13 @@ body {
     margin-top: 1rem;
 }
 .plugin {
-    width: 130px;
-    height: 80px;
-    border: 1px solid;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
+}
+.plugin img {
+    width: 100%;
+    height: 100%;
 }
 .w {
     font-size: 24px;
@@ -307,6 +318,7 @@ footer a, footer p {
 }
 footer hr {
     border: 1px solid var(--hero-sub);
+    opacity: 50%;
     width: 100%
 }
 .copywrite {
