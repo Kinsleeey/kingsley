@@ -31,3 +31,8 @@ document.querySelectorAll('.navlink').forEach(link => {
     document.querySelector('.sidebar').classList.add('hide');
   });
 });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+
